@@ -1,0 +1,10 @@
+entrypoint = "main.py"
+run = "python3 main.py"
+
+[deployment]
+run = ["python3", "main.py"]
+deploymentTarget = "autoscale"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
